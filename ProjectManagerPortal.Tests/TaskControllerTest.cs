@@ -23,6 +23,7 @@ namespace ProjectManagerPortal.Tests
                     TaskId = 1,
                     TaskTitle = "Test Task 1",
                     ParentTaskId = 1,
+                    ProjectId = 9,
                     StartDate = DateTime.Now.Date,
                     EndDate = DateTime.Now.Date.AddDays(3),
                     Priority = 1,
@@ -31,12 +32,13 @@ namespace ProjectManagerPortal.Tests
                 new TaskDO()
                 {
                     TaskId = 2,
-                    TaskTitle = "Test Task 2",
-                    ParentTaskId = 2,
-                    StartDate = DateTime.Now.Date.AddDays(-3),
-                    EndDate = DateTime.Now.Date.AddDays(-1),
-                    Priority = 2,
-                    IsTaskEnded = true
+                    TaskTitle = "Parent Task 1",
+                    ProjectId = 8,
+                    ParentTaskId = 0,
+                    StartDate = null,
+                    EndDate = null,
+                    Priority = 0,
+                    IsTaskEnded = false
                 },
             };
 
@@ -114,12 +116,15 @@ namespace ProjectManagerPortal.Tests
                       StartDate = DateTime.Now.Date,
                       EndDate = DateTime.Now.Date.AddDays(3),
                       Priority = 1,
-                      IsTaskEnded = false
+                      IsTaskEnded = false,
+                      UserId = 1,
+                      ProjectId = 1
                   };
 
             var mock = new Mock<ITaskManagerBL>();
             var userMock = new Mock<IUserManagerBL>();
             mock.Setup(service => service.AddTask(task));
+            userMock.Setup(service => service.UpdateTaskId(task.UserId, 1));
 
             var controller = new TaskController(mock.Object, userMock.Object)
             {
@@ -145,7 +150,41 @@ namespace ProjectManagerPortal.Tests
                       StartDate = DateTime.Now.Date,
                       EndDate = DateTime.Now.Date.AddDays(3),
                       Priority = 1,
-                      IsTaskEnded = false
+                      IsTaskEnded = true,
+                      UserId = 1,
+                      ProjectId = 1
+                  };
+
+            var mock = new Mock<ITaskManagerBL>();
+            var userMock = new Mock<IUserManagerBL>();
+            mock.Setup(service => service.UpdateTask(task));
+
+            var controller = new TaskController(mock.Object, userMock.Object)
+            {
+                Request = new System.Net.Http.HttpRequestMessage(),
+                Configuration = new HttpConfiguration()
+            };
+
+            HttpResponseMessage actualTasks = controller.Put(task.TaskId, task);
+
+            Assert.AreEqual("OK", actualTasks.StatusCode.ToString());
+        }
+
+        [TestMethod]
+        public void DeassignProject()
+        {
+            TaskDO task =
+                  new TaskDO()
+                  {
+                      TaskId = 1,
+                      TaskTitle = "Test Task 1",
+                      ParentTaskId = 1,
+                      StartDate = DateTime.Now.Date,
+                      EndDate = DateTime.Now.Date.AddDays(3),
+                      Priority = 1,
+                      IsTaskEnded = true,
+                      UserId = 1,
+                      ProjectId = 1
                   };
 
             var mock = new Mock<ITaskManagerBL>();
