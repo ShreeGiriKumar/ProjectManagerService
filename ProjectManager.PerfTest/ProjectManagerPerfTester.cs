@@ -1,75 +1,73 @@
 ﻿using NBench;
+using ProjectManager.DL.DO;
+using ProjectManagerPortal.BL;
+using ProjectManagerPortal.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Web.Http;
-using ProjectManager.DL.DO;
-using ProjectManagerPortal.BL;
-using ProjectManagerPortal.Controllers;
 
 namespace ProjectManager.PerfTest
 {
-    public class TaskManagerPerfTester
+    public class ProjectManagerPerfTester
     {
         private const int AcceptableMinAddThroughput = 50;
 
-        private static TaskController controller = new TaskController(new TaskManagerBL(), new UserManagerBL())
+        private static ProjectController controller = new ProjectController(new ProjectManagerBL(), new UserManagerBL())
         {
             Request = new System.Net.Http.HttpRequestMessage(),
             Configuration = new HttpConfiguration()
         };
 
-        List<TaskDO> tasks = new List<TaskDO>();
+        List<ProjectDO> projects = new List<ProjectDO>();
 
         [PerfSetup]
         public void Setup(BenchmarkContext context)
         {
             for (var cnt = 0; cnt < 100; cnt++)
             {
-                tasks.Add(new TaskDO()
+                projects.Add(new ProjectDO()
                 {
-                    TaskId = 0,
-                    TaskTitle= string.Format("{0}-{1}","Task Info",cnt),
-                    ParentTaskId = 1002,
+                    ProjectId = cnt + 10,
+                    ProjectTitle = "Project Title Load" +  cnt,
                     StartDate = DateTime.Now.Date,
-                    EndDate = DateTime.Now.AddDays(2),
-                    IsTaskEnded = false,
+                    EndDate = DateTime.Now.Date,
                     Priority = 1,
-                    ProjectId = 7
+                    ManagerId = 1006 + cnt
                 });
             }
         }
 
         [PerfBenchmark(NumberOfIterations = 5, RunMode = RunMode.Throughput, TestMode = TestMode.Test, SkipWarmups = true)]
         [ElapsedTimeAssertion(MaxTimeMilliseconds = 10000, MinTimeMilliseconds = 1000)]
-        public void AddTask_Throughput_IterationMode(BenchmarkContext context)
+        public void AddProject_Throughput_IterationMode(BenchmarkContext context)
         {
-            for (var i = 0; i < tasks.Count; i++)
+            for (var i = 0; i < projects.Count; i++)
             {
-                HttpResponseMessage msg = controller.Post(tasks[i]);
+                HttpResponseMessage msg = controller.Post(projects[i]);
             }
         }
 
         [PerfBenchmark(NumberOfIterations = 1, RunMode = RunMode.Iterations, TestMode = TestMode.Test, SkipWarmups = true)]
         [ElapsedTimeAssertion(MaxTimeMilliseconds = 10000, MinTimeMilliseconds = 1000)]
-        public void GetAllTask_Throughput_IterationMode(BenchmarkContext context)
+        public void GetAllProject_Throughput_IterationMode(BenchmarkContext context)
         {
             for (var i = 0; i < AcceptableMinAddThroughput; i++)
             {
-                HttpResponseMessage msg = controller.Get();                
+                HttpResponseMessage msg = controller.Get();
             }
         }
 
         [PerfBenchmark(NumberOfIterations = 1, RunMode = RunMode.Throughput, TestMode = TestMode.Test, SkipWarmups = true)]
         [ElapsedTimeAssertion(MaxTimeMilliseconds = 10000, MinTimeMilliseconds = 1000)]
-        public void GetTaskById_Throughput_IterationMode(BenchmarkContext context)
+        public void GetProjectById_Throughput_IterationMode(BenchmarkContext context)
         {
             for (var i = 0; i < AcceptableMinAddThroughput; i++)
             {
                 HttpResponseMessage msg = controller.Get(1);
             }
         }
-        
+
 
         [PerfCleanup]
         public void Cleanup(BenchmarkContext context)
@@ -78,3 +76,4 @@ namespace ProjectManager.PerfTest
         }
     }
 }
+

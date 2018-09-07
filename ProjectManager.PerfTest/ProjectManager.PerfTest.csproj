@@ -8,8 +8,8 @@
     <ProjectGuid>{7D6B6562-175C-4669-A693-E9C5E0DAAC3A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TaskManager.PerfTest</RootNamespace>
-    <AssemblyName>TaskManager.PerfTest</AssemblyName>
+    <RootNamespace>ProjectManager.PerfTest</RootNamespace>
+    <AssemblyName>ProjectManager.PerfTest</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -56,8 +56,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ParentTaskManagerPerfTester.cs" />
+    <Compile Include="ProjectManagerPerfTester.cs" />
     <Compile Include="TaskManagerPerfTester.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserManagerPerfTester.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
