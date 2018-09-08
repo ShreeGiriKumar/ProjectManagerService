@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Web.Http;
@@ -16,7 +17,11 @@ namespace ProjectManagerPortal
             // Web API routes
             config.MapHttpAttributeRoutes();
 
-            var cors = new EnableCorsAttribute(origins: "http://localhost:4200", headers: "*", methods: "*");
+            var cors = new EnableCorsAttribute(
+                origins: ConfigurationManager.AppSettings["UIIPAddr"].ToString(),
+                headers: "*", 
+                methods: "*");
+
             cors.SupportsCredentials = true;
             config.EnableCors(cors);
 
