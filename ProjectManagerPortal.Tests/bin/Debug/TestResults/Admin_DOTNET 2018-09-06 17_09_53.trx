@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="65984390-91ee-4f95-8bcd-e38d52d0ee5a" name="Admin@DOTNET 2018-09-06 17:09:53" runUser="DOTNET\Admin" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="7f8e8128-88f9-4ac9-8c59-dcbd29fbe7b4">
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="Admin_DOTNET 2018-09-06 17_09_53" />
+    <Properties />
+  </TestSettings>
+  <Times creation="2018-09-06T17:09:53.6446329+05:30" queuing="2018-09-06T17:09:58.0294818+05:30" start="2018-09-06T17:09:58.4624797+05:30" finish="2018-09-06T17:10:01.7444780+05:30" />
+  <ResultSummary outcome="Completed">
+    <Counters total="18" executed="18" passed="18" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AddTask" storage="projectmanagerportal.tests.dll" id="50109d55-4f95-49e4-e517-80dd5b2e999e">
+      <Execution id="c3eb6e0d-e1d9-44b7-8838-bbe2835cca49" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2017/Projects/ProjectManagerPortal/ProjectManagerPortal.Tests/bin/Debug/ProjectManagerPortal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjectManagerPortal.Tests.TaskControllerTest, ProjectManagerPortal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddTask" />
+    </UnitTest>
+    <UnitTest name="GetAllParentTask" storage="projectmanagerportal.tests.dll" id="28e4cfa6-5da4-02f6-a712-bed6d39c2f6c">
+      <Execution id="71fd9276-ccfe-4c06-a65a-322afa9cc8eb" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2017/Projects/ProjectManagerPortal/ProjectManagerPortal.Tests/bin/Debug/ProjectManagerPortal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjectManagerPortal.Tests.ParentTaskControllerTest, ProjectManagerPortal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAllParentTask" />
+    </UnitTest>
+    <UnitTest name="GetProject" storage="projectmanagerportal.tests.dll" id="3dba0dc0-bdfe-fdf9-149e-5f041638851e">
+      <Execution id="2ca99a33-1c82-4938-b4e9-beb514471f84" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2017/Projects/ProjectManagerPortal/ProjectManagerPortal.Tests/bin/Debug/ProjectManagerPortal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjectManagerPortal.Tests.ProjectControllerTest, ProjectManagerPortal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetProject" />
+    </UnitTest>
+    <UnitTest name="GetAllTasks" storage="projectmanagerportal.tests.dll" id="2b178557-33f4-11f3-0859-fb3be54847cc">
+      <Execution id="3bac1d25-aeda-4044-a90b-9a0f45af7fd5" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2017/Projects/ProjectManagerPortal/ProjectManagerPortal.Tests/bin/Debug/ProjectManagerPortal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjectManagerPortal.Tests.TaskControllerTest, ProjectManagerPortal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAllTasks" />
+    </UnitTest>
+    <UnitTest name="UpdateUser" storage="projectmanagerportal.tests.dll" id="fdfe1506-a0c4-3415-28e3-8ea39463adb8">
+      <Execution id="ad7d73be-b0bc-46b6-b30a-0b4515855c00" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2017/Projects/ProjectManagerPortal/ProjectManagerPortal.Tests/bin/Debug/ProjectManagerPortal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjectManagerPortal.Tests.UserControllerTest, ProjectManagerPortal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateUser" />
+    </UnitTest>
+    <UnitTest name="DeleteUser" storage="projectmanagerportal.tests.dll" id="849e0abc-f102-38aa-b4ea-af6c1b089f88">
+      <Execution id="3ffe3eea-5df7-432b-8dca-4bc69915aa62" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2017/Projects/ProjectManagerPortal/ProjectManagerPortal.Tests/bin/Debug/ProjectManagerPortal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjectManagerPortal.Tests.UserControllerTest, ProjectManagerPortal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeleteUser" />
+    </UnitTest>
+    <UnitTest name="DeassignProject" storage="projectmanagerportal.tests.dll" id="9d91d151-f33e-5b02-451b-c4ae6abcf7a6">
+      <Execution id="42c2e7a7-7c09-46b3-807c-fb9b74b11a74" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2017/Projects/ProjectManagerPortal/ProjectManagerPortal.Tests/bin/Debug/ProjectManagerPortal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjectManagerPortal.Tests.TaskControllerTest, ProjectManagerPortal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeassignProject" />
+    </UnitTest>
+    <UnitTest name="UpdateTask" storage="projectmanagerportal.tests.dll" id="ed260f36-6fd4-c3b1-64ea-e164e1175524">
+      <Execution id="66771857-592e-4cf8-b446-f7fef88bfd1f" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2017/Projects/ProjectManagerPortal/ProjectManagerPortal.Tests/bin/Debug/ProjectManagerPortal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjectManagerPortal.Tests.ParentTaskControllerTest, ProjectManagerPortal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateTask" />
+    </UnitTest>
+    <UnitTest name="GetUser" storage="projectmanagerportal.tests.dll" id="692b5b60-1dff-2f2f-2530-1102cf640d91">
+      <Execution id="72cfeabe-e084-40b2-9032-778516f1a890" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2017/Projects/ProjectManagerPortal/ProjectManagerPortal.Tests/bin/Debug/ProjectManagerPortal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjectManagerPortal.Tests.UserControllerTest, ProjectManagerPortal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetUser" />
+    </UnitTest>
+    <UnitTest name="GetParentTask" storage="projectmanagerportal.tests.dll" id="2621f184-5984-6831-c4c9-bb102475af5f">
+      <Execution id="a3bb464f-1373-4dc1-9d96-b7c8e0b7cc58" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2017/Projects/ProjectManagerPortal/ProjectManagerPortal.Tests/bin/Debug/ProjectManagerPortal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjectManagerPortal.Tests.ParentTaskControllerTest, ProjectManagerPortal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetParentTask" />
+    </UnitTest>
+    <UnitTest name="AddUser" storage="projectmanagerportal.tests.dll" id="756fe383-90c7-258e-2c4e-bb9caf9dbfb8">
+      <Execution id="133734c9-5b2c-49b2-8ffd-f3118a42833a" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2017/Projects/ProjectManagerPortal/ProjectManagerPortal.Tests/bin/Debug/ProjectManagerPortal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjectManagerPortal.Tests.UserControllerTest, ProjectManagerPortal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddUser" />
+    </UnitTest>
+    <UnitTest name="UpdateTask" storage="projectmanagerportal.tests.dll" id="d8a3fd6a-d408-47b7-6d70-fddb27cd7919">
+      <Execution id="84a03b9a-2f00-4e9a-b13b-9d1294b6fa93" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2017/Projects/ProjectManagerPortal/ProjectManagerPortal.Tests/bin/Debug/ProjectManagerPortal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjectManagerPortal.Tests.ProjectControllerTest, ProjectManagerPortal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateTask" />
+    </UnitTest>
+    <UnitTest name="GetAllUsers" storage="projectmanagerportal.tests.dll" id="c4742d9d-c173-2c37-7672-3745e1e3bf23">
+      <Execution id="1f6a46d1-71b3-44b0-bdd7-53e270ce3816" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2017/Projects/ProjectManagerPortal/ProjectManagerPortal.Tests/bin/Debug/ProjectManagerPortal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjectManagerPortal.Tests.UserControllerTest, ProjectManagerPortal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAllUsers" />
+    </UnitTest>
+    <UnitTest name="AddTask" storage="projectmanagerportal.tests.dll" id="1ff06788-63e0-8dad-78c7-82af51b2b214">
+      <Execution id="282e0c72-bf5b-420d-9440-246bc6fae0b2" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2017/Projects/ProjectManagerPortal/ProjectManagerPortal.Tests/bin/Debug/ProjectManagerPortal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjectManagerPortal.Tests.ProjectControllerTest, ProjectManagerPortal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddTask" />
+    </UnitTest>
+    <UnitTest name="UpdateTask" storage="projectmanagerportal.tests.dll" id="3039291a-6a6a-0df2-7e09-a484f4396418">
+      <Execution id="e720907a-3ae3-44bc-9eb8-731505250c3d" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2017/Projects/ProjectManagerPortal/ProjectManagerPortal.Tests/bin/Debug/ProjectManagerPortal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjectManagerPortal.Tests.TaskControllerTest, ProjectManagerPortal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateTask" />
+    </UnitTest>
+    <UnitTest name="GetAllProjects" storage="projectmanagerportal.tests.dll" id="a1d13f7a-7549-a152-0d7a-50622971ca0a">
+      <Execution id="0ad355e3-a356-47d4-b100-15d75e665af6" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2017/Projects/ProjectManagerPortal/ProjectManagerPortal.Tests/bin/Debug/ProjectManagerPortal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjectManagerPortal.Tests.ProjectControllerTest, ProjectManagerPortal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAllProjects" />
+    </UnitTest>
+    <UnitTest name="AddParentTask" storage="projectmanagerportal.tests.dll" id="ca4a756b-90f2-c9bf-5048-93eaef14c161">
+      <Execution id="c13089d5-e847-47ba-81f8-14a03f7f36f3" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2017/Projects/ProjectManagerPortal/ProjectManagerPortal.Tests/bin/Debug/ProjectManagerPortal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjectManagerPortal.Tests.ParentTaskControllerTest, ProjectManagerPortal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddParentTask" />
+    </UnitTest>
+    <UnitTest name="GetTask" storage="projectmanagerportal.tests.dll" id="85f7c12a-3656-1a90-bad4-0191f87a48bd">
+      <Execution id="69034f65-e686-42cc-82cc-55cb292aa958" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/Visual Studio 2017/Projects/ProjectManagerPortal/ProjectManagerPortal.Tests/bin/Debug/ProjectManagerPortal.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjectManagerPortal.Tests.TaskControllerTest, ProjectManagerPortal.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetTask" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ca4a756b-90f2-c9bf-5048-93eaef14c161" executionId="c13089d5-e847-47ba-81f8-14a03f7f36f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="28e4cfa6-5da4-02f6-a712-bed6d39c2f6c" executionId="71fd9276-ccfe-4c06-a65a-322afa9cc8eb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2621f184-5984-6831-c4c9-bb102475af5f" executionId="a3bb464f-1373-4dc1-9d96-b7c8e0b7cc58" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ed260f36-6fd4-c3b1-64ea-e164e1175524" executionId="66771857-592e-4cf8-b446-f7fef88bfd1f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1ff06788-63e0-8dad-78c7-82af51b2b214" executionId="282e0c72-bf5b-420d-9440-246bc6fae0b2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a1d13f7a-7549-a152-0d7a-50622971ca0a" executionId="0ad355e3-a356-47d4-b100-15d75e665af6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3dba0dc0-bdfe-fdf9-149e-5f041638851e" executionId="2ca99a33-1c82-4938-b4e9-beb514471f84" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d8a3fd6a-d408-47b7-6d70-fddb27cd7919" executionId="84a03b9a-2f00-4e9a-b13b-9d1294b6fa93" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="50109d55-4f95-49e4-e517-80dd5b2e999e" executionId="c3eb6e0d-e1d9-44b7-8838-bbe2835cca49" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9d91d151-f33e-5b02-451b-c4ae6abcf7a6" executionId="42c2e7a7-7c09-46b3-807c-fb9b74b11a74" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2b178557-33f4-11f3-0859-fb3be54847cc" executionId="3bac1d25-aeda-4044-a90b-9a0f45af7fd5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="85f7c12a-3656-1a90-bad4-0191f87a48bd" executionId="69034f65-e686-42cc-82cc-55cb292aa958" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3039291a-6a6a-0df2-7e09-a484f4396418" executionId="e720907a-3ae3-44bc-9eb8-731505250c3d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="756fe383-90c7-258e-2c4e-bb9caf9dbfb8" executionId="133734c9-5b2c-49b2-8ffd-f3118a42833a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="849e0abc-f102-38aa-b4ea-af6c1b089f88" executionId="3ffe3eea-5df7-432b-8dca-4bc69915aa62" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c4742d9d-c173-2c37-7672-3745e1e3bf23" executionId="1f6a46d1-71b3-44b0-bdd7-53e270ce3816" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="692b5b60-1dff-2f2f-2530-1102cf640d91" executionId="72cfeabe-e084-40b2-9032-778516f1a890" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fdfe1506-a0c4-3415-28e3-8ea39463adb8" executionId="ad7d73be-b0bc-46b6-b30a-0b4515855c00" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c13089d5-e847-47ba-81f8-14a03f7f36f3" testId="ca4a756b-90f2-c9bf-5048-93eaef14c161" testName="AddParentTask" computerName="DOTNET" duration="00:00:01.0080484" startTime="2018-09-06T17:09:58.6924801+05:30" endTime="2018-09-06T17:10:01.1234775+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c13089d5-e847-47ba-81f8-14a03f7f36f3">
+    </UnitTestResult>
+    <UnitTestResult executionId="71fd9276-ccfe-4c06-a65a-322afa9cc8eb" testId="28e4cfa6-5da4-02f6-a712-bed6d39c2f6c" testName="GetAllParentTask" computerName="DOTNET" duration="00:00:00.0641922" startTime="2018-09-06T17:10:01.1354780+05:30" endTime="2018-09-06T17:10:01.2054788+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="71fd9276-ccfe-4c06-a65a-322afa9cc8eb">
+    </UnitTestResult>
+    <UnitTestResult executionId="a3bb464f-1373-4dc1-9d96-b7c8e0b7cc58" testId="2621f184-5984-6831-c4c9-bb102475af5f" testName="GetParentTask" computerName="DOTNET" duration="00:00:00.0047771" startTime="2018-09-06T17:10:01.2135071+05:30" endTime="2018-09-06T17:10:01.2244815+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3bb464f-1373-4dc1-9d96-b7c8e0b7cc58">
+    </UnitTestResult>
+    <UnitTestResult executionId="66771857-592e-4cf8-b446-f7fef88bfd1f" testId="ed260f36-6fd4-c3b1-64ea-e164e1175524" testName="UpdateTask" computerName="DOTNET" duration="00:00:00.0096050" startTime="2018-09-06T17:10:01.2344780+05:30" endTime="2018-09-06T17:10:01.2484798+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="66771857-592e-4cf8-b446-f7fef88bfd1f">
+    </UnitTestResult>
+    <UnitTestResult executionId="282e0c72-bf5b-420d-9440-246bc6fae0b2" testId="1ff06788-63e0-8dad-78c7-82af51b2b214" testName="AddTask" computerName="DOTNET" duration="00:00:00.0560284" startTime="2018-09-06T17:10:01.2574772+05:30" endTime="2018-09-06T17:10:01.3194786+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="282e0c72-bf5b-420d-9440-246bc6fae0b2">
+    </UnitTestResult>
+    <UnitTestResult executionId="0ad355e3-a356-47d4-b100-15d75e665af6" testId="a1d13f7a-7549-a152-0d7a-50622971ca0a" testName="GetAllProjects" computerName="DOTNET" duration="00:00:00.0074417" startTime="2018-09-06T17:10:01.3305430+05:30" endTime="2018-09-06T17:10:01.3434823+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0ad355e3-a356-47d4-b100-15d75e665af6">
+    </UnitTestResult>
+    <UnitTestResult executionId="2ca99a33-1c82-4938-b4e9-beb514471f84" testId="3dba0dc0-bdfe-fdf9-149e-5f041638851e" testName="GetProject" computerName="DOTNET" duration="00:00:00.0053555" startTime="2018-09-06T17:10:01.3624786+05:30" endTime="2018-09-06T17:10:01.3749230+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ca99a33-1c82-4938-b4e9-beb514471f84">
+    </UnitTestResult>
+    <UnitTestResult executionId="84a03b9a-2f00-4e9a-b13b-9d1294b6fa93" testId="d8a3fd6a-d408-47b7-6d70-fddb27cd7919" testName="UpdateTask" computerName="DOTNET" duration="00:00:00.0067229" startTime="2018-09-06T17:10:01.3844772+05:30" endTime="2018-09-06T17:10:01.3964785+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="84a03b9a-2f00-4e9a-b13b-9d1294b6fa93">
+    </UnitTestResult>
+    <UnitTestResult executionId="c3eb6e0d-e1d9-44b7-8838-bbe2835cca49" testId="50109d55-4f95-49e4-e517-80dd5b2e999e" testName="AddTask" computerName="DOTNET" duration="00:00:00.0102039" startTime="2018-09-06T17:10:01.4074785+05:30" endTime="2018-09-06T17:10:01.4224782+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c3eb6e0d-e1d9-44b7-8838-bbe2835cca49">
+    </UnitTestResult>
+    <UnitTestResult executionId="42c2e7a7-7c09-46b3-807c-fb9b74b11a74" testId="9d91d151-f33e-5b02-451b-c4ae6abcf7a6" testName="DeassignProject" computerName="DOTNET" duration="00:00:00.0055469" startTime="2018-09-06T17:10:01.4344769+05:30" endTime="2018-09-06T17:10:01.4444775+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="42c2e7a7-7c09-46b3-807c-fb9b74b11a74">
+    </UnitTestResult>
+    <UnitTestResult executionId="3bac1d25-aeda-4044-a90b-9a0f45af7fd5" testId="2b178557-33f4-11f3-0859-fb3be54847cc" testName="GetAllTasks" computerName="DOTNET" duration="00:00:00.0068025" startTime="2018-09-06T17:10:01.4604766+05:30" endTime="2018-09-06T17:10:01.4724777+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3bac1d25-aeda-4044-a90b-9a0f45af7fd5">
+    </UnitTestResult>
+    <UnitTestResult executionId="69034f65-e686-42cc-82cc-55cb292aa958" testId="85f7c12a-3656-1a90-bad4-0191f87a48bd" testName="GetTask" computerName="DOTNET" duration="00:00:00.0048621" startTime="2018-09-06T17:10:01.4814776+05:30" endTime="2018-09-06T17:10:01.4914783+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="69034f65-e686-42cc-82cc-55cb292aa958">
+    </UnitTestResult>
+    <UnitTestResult executionId="e720907a-3ae3-44bc-9eb8-731505250c3d" testId="3039291a-6a6a-0df2-7e09-a484f4396418" testName="UpdateTask" computerName="DOTNET" duration="00:00:00.0046395" startTime="2018-09-06T17:10:01.5014775+05:30" endTime="2018-09-06T17:10:01.5114775+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e720907a-3ae3-44bc-9eb8-731505250c3d">
+    </UnitTestResult>
+    <UnitTestResult executionId="133734c9-5b2c-49b2-8ffd-f3118a42833a" testId="756fe383-90c7-258e-2c4e-bb9caf9dbfb8" testName="AddUser" computerName="DOTNET" duration="00:00:00.0065403" startTime="2018-09-06T17:10:01.5264792+05:30" endTime="2018-09-06T17:10:01.5394989+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="133734c9-5b2c-49b2-8ffd-f3118a42833a">
+    </UnitTestResult>
+    <UnitTestResult executionId="3ffe3eea-5df7-432b-8dca-4bc69915aa62" testId="849e0abc-f102-38aa-b4ea-af6c1b089f88" testName="DeleteUser" computerName="DOTNET" duration="00:00:00.0039949" startTime="2018-09-06T17:10:01.5484776+05:30" endTime="2018-09-06T17:10:01.5584833+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3ffe3eea-5df7-432b-8dca-4bc69915aa62">
+    </UnitTestResult>
+    <UnitTestResult executionId="1f6a46d1-71b3-44b0-bdd7-53e270ce3816" testId="c4742d9d-c173-2c37-7672-3745e1e3bf23" testName="GetAllUsers" computerName="DOTNET" duration="00:00:00.0070350" startTime="2018-09-06T17:10:01.5694790+05:30" endTime="2018-09-06T17:10:01.5804806+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f6a46d1-71b3-44b0-bdd7-53e270ce3816">
+    </UnitTestResult>
+    <UnitTestResult executionId="72cfeabe-e084-40b2-9032-778516f1a890" testId="692b5b60-1dff-2f2f-2530-1102cf640d91" testName="GetUser" computerName="DOTNET" duration="00:00:00.0047868" startTime="2018-09-06T17:10:01.5904800+05:30" endTime="2018-09-06T17:10:01.5994799+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="72cfeabe-e084-40b2-9032-778516f1a890">
+    </UnitTestResult>
+    <UnitTestResult executionId="ad7d73be-b0bc-46b6-b30a-0b4515855c00" testId="fdfe1506-a0c4-3415-28e3-8ea39463adb8" testName="UpdateUser" computerName="DOTNET" duration="00:00:00.0042735" startTime="2018-09-06T17:10:01.6084782+05:30" endTime="2018-09-06T17:10:01.6184784+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ad7d73be-b0bc-46b6-b30a-0b4515855c00">
+    </UnitTestResult>
+  </Results>
+</TestRun>

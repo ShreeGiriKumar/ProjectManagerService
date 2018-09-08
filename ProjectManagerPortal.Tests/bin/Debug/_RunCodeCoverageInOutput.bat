@@ -1,0 +1,3 @@
+..\..\..\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -target:"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\mstest.exe" -targetargs:"/testcontainer:ProjectManagerPortal.Tests.dll" -register:user -filter:"+[ProjectManagerPortal.Tests]*" -output:_CodeCoverageResult.xml
+
+..\..\..\packages\ReportGenerator.3.1.2\tools\ReportGenerator.exe "-reports:_CodeCoverageResult.xml" "-targetdir:_CodeCoverageReport"
